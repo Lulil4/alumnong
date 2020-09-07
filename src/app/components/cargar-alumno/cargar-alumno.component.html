@@ -1,0 +1,25 @@
+<div class="parent">
+<form class="example-form" style="cent">
+    <mat-form-field class="example-full-width">
+      <mat-label>Ingrese nombre</mat-label>
+      <input matInput name="nombre" [(ngModel)]="nombre" placeholder="Juan">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <mat-label>Ingrese Apellido</mat-label>
+        <input matInput name="apellido" [(ngModel)]="apellido" placeholder="Perez">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <mat-label>Ingrese legajo</mat-label>
+        <input matInput name="legajo" [(ngModel)]="legajo" placeholder="xxx.xxx">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <mat-label>Ingrese materia</mat-label>
+        <input matInput name="materia" [(ngModel)]="materia" placeholder="Matemática">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="accent" (click)="cargar($event)" value="Enviar">Cargar alumno</button>
+  </form>
+</div>

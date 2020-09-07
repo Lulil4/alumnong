@@ -1,0 +1,4 @@
+<h2>Lista de Alumnos</h2>
+<div *ngFor="let alumno of listaAlumnos; let i=index">
+    | N°{{i+1}} | {{alumno.legajo}} | {{alumno.apellido}}, {{alumno.nombre}} | {{alumno.materia}} |
+</div>

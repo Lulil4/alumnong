@@ -1,0 +1,12 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened>
+        <button mat-raised-button color="accent" (click)="manejadoraCargar()">Cargar alumno</button>
+        <br>
+        <button mat-raised-button color="accent" (click)="manejadoraListar()">Listar alumnos</button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-cargar-alumno *ngIf="mostrarCargar" (onCargar)="onCargar($event)"></app-cargar-alumno>
+        <app-listar-alumno *ngIf="mostrarListar" [listaAlumnos]="listaAlumnos"></app-listar-alumno>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
